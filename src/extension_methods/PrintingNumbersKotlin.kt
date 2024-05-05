@@ -1,8 +1,8 @@
 package extension_methods
 
 fun IntArray.print() {
-    for (num in this) {
-        println("1) $num")
+    this.forEachIndexed { i, num ->
+        println("$i) $num")
     }
 }
 
